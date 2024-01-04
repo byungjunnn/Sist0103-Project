@@ -1,0 +1,16 @@
+package day0104;
+
+public class DataType_06 {
+
+	public static void main(String[] args) {
+		//기본자료형 8개
+		
+		boolean flag=false; //논리형 true, false
+		
+		char ch='가'; //문자형, 반드시 하나의 문자, 16바이트 유니코드값 표현, 2바이트 문자 하나
+		
+		
+		
+	}
+
+}
