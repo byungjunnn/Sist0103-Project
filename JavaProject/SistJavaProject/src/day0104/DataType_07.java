@@ -16,7 +16,7 @@ public class DataType_07 {
 		int y=4;
 		
 		System.out.println(x/y); //정수형끼리의 계산결과는 무조건 정수형 int타입 출력
-		System.out.println((double)x/y); //계싼시 x를 double로 변환해서 계산: 결과는 double
+		System.out.println((double)x/y); //계산시 x를 double로 변환해서 계산: 결과는 double
 		System.out.println(x/(double)y); //수식 중 한개만 double이어도 결과는 double
 		
 		//형변환

@@ -22,8 +22,6 @@ public class book65_13 {
 		System.out.println("str2: "+str2);
 		System.out.println("str3: "+str3);
 		
-
-		
 	}
 
 }
