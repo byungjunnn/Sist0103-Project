@@ -1,0 +1,18 @@
+package day0108;
+
+public class Quiz_18 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	public static void quiz_1() {
+		
+	}
+	public static void quiz_2() {
+		
+	}
+	public static void quiz_3() {
+		
+	}
+}

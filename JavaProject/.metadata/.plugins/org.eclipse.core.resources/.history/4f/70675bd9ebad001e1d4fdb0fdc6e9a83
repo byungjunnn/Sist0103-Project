@@ -1,0 +1,10 @@
+package day0108;
+
+public class ForGugu_14 {
+
+	public static void main(String[] args) {
+		// 중첩for문 이용한 구구단(2~9단)
+		for(int )
+	}
+
+}

@@ -1,0 +1,32 @@
+package day0108;
+
+public class ForGugu_14 {
+
+	public static void main(String[] args) {
+		// 중첩for문 이용한 구구단(2~9단)
+		/*for(int dan=2;dan<=9;dan++) {
+			for(int j=1;j<=9;j++) {
+				System.out.println(dan+"X"+j+"="+(dan*j));
+			}
+			System.out.println();
+		}*/
+		
+
+		//break문 이용한 구구단
+	loop1:	for(int dan=2;dan<=9;dan++) {
+			for(int j=1;j<=9;j++) {
+				if(j==5)
+					break loop1;
+				System.out.println(dan+"X"+j+"="+(dan*j));
+			}
+			System.out.println();
+		}
+		for(int j=1;j<=9;j++) {
+			for(int dan=2;dan<=9;dna++) {
+				System.out.println(dan+"X"+j+"="+(dan*j));
+		}
+		
+	}
+
+	}
+}

@@ -1,0 +1,18 @@
+package day0108;
+
+public class SumTest_11 {
+
+	public static void main(String[] args) {
+		// 반복문 안에서 합계 구하기
+		
+		int sum=0; //sum은 초기값이 무조건 0
+		
+		for(int i=1;i<=10;i++) {
+			
+			sum+=i;
+		}
+		System.out.println("1~10까지의 합: "+sum+"입니다");
+
+	}
+
+}

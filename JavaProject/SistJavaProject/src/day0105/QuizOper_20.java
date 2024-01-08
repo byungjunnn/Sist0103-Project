@@ -21,7 +21,7 @@ public class QuizOper_20 {
 		
 		String name;
 		int count, price;
-		int tot, sale;
+		int tot, sale=0;
 		
 		
 		System.out.print("상품명: ");
@@ -39,7 +39,6 @@ public class QuizOper_20 {
 		System.out.println("=========================");
 		System.out.println(name+" "+count+"개는 총 "+(tot-sale)+"원 입니다");
 		System.out.println("할인된 금액: "+sale+"원");
-		
 		
 	}
 
