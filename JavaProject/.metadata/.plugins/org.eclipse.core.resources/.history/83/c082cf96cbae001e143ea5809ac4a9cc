@@ -45,7 +45,7 @@ public class QuizFor_17 {
 		x=sc.nextInt();
 		y=sc.nextInt();
 		
-		for(int i=1;i<=y;i++) {
+		for(int i=y;i<=y;i++) {
 			p*=x;
 			//x를 y번 곱한다
 			}
