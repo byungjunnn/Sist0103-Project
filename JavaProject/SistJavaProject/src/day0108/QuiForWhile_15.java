@@ -11,7 +11,6 @@ public class QuiForWhile_15 {
 		test3();
 		test4();
 	}
-
 	public static void test1() {
 		//문제: 1~100까지의 3의 배수 갯수 구하기
 		int n=0;

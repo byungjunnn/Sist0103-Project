@@ -1,0 +1,27 @@
+package day0109;
+
+public class QuizFor_17 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	public static void quiz1() {
+		/*
+		 * 팩토리얼 구할 숫자를 입력하여 해당 숫자에 대한 팩토리얼 구하기
+		 * 
+		 * 팩토리얼 구할 숫자 입력
+		 * 3
+		 * 3!=6
+		 */
+	}
+	
+	public static void quiz2() {
+		
+	}
+	
+	public static void quiz3() {
+		
+	}
+
+}
