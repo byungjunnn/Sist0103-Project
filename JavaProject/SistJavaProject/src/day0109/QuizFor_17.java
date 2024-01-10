@@ -8,7 +8,7 @@ public class QuizFor_17 {
 		// TODO Auto-generated method stub
 		//quiz1();
 		quiz2();
-		//quiz3();
+		quiz3();
 	}
 	public static void quiz1() {
 		/*
@@ -27,9 +27,7 @@ public class QuizFor_17 {
 			fac*=i;
 		}
 		System.out.println(num+"!="+fac);
-			
 	}
-	
 	public static void quiz2() {
 		/*
 		 * 두수 x,y를 입력 후 x의 y승_for문 이용해서 구하시오
@@ -50,9 +48,8 @@ public class QuizFor_17 {
 			//x를 y번 곱한다
 			}
 		System.out.println(x+"의 "+y+"승은 "+p+"입니다");
+		System.out.println();
 		}
-			
-	
 	public static void quiz3() {
 		/*
 		 * 1~100까지의 숫자 중 짝수의 합과 홀수의 합을 출력해주세요(for)
@@ -65,7 +62,5 @@ public class QuizFor_17 {
 				sum2+=i;
 		}
 		System.out.println("짝수의 합: "+sum1+"\n"+"홀수의 합: "+sum2);
-			
 	}
-
 }

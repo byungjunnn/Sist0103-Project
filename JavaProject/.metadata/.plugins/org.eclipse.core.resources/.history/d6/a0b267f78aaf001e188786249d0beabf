@@ -1,0 +1,67 @@
+package day0110;
+
+class Mart{
+	private String sangpum;
+	int su;
+	int dan;
+	static String SHOPNAME="롯데마트"; //상수
+
+	public Mart(String a, int b, int c, String d) {
+		sangpum=a;
+		su=b;
+		dan=c;
+		SHOPNAME=d;
+	}	
+	public void setSangpum(String sangpum) {
+		this.sangpum=sangpum;
+	}
+	public void setSu(int su) {
+		this.su=su;
+	}
+	public void setDan(int dan) {
+		this.dan=dan;
+	}
+	public void setShopname(String SHOPNAME) {
+		this.SHOPNAME=SHOPNAME;
+	}
+	public String getSangpum() {
+		return sangpum;
+	}
+	public int getSu() {
+		return su;
+	}
+	public int getDan() {
+		return dan;
+	}
+	public String getShopname() {
+		return SHOPNAME;
+	}
+}
+public class QuizClass_16 {
+
+	public static void main(String[] args) {
+
+		Mart m1=new Mart("쵸코파이", 10, 4500, "롯데마트");
+		String sangpum=m1.getSangpum();
+		int su=m1.getSu();
+		int dan=m1.getDan();
+		String SHOPNAME=m1.getShopname();
+		
+		Mart m2=new Mart("엄마손파이", 5, 2500, "롯데마트");
+		String sangpum2=m2.getSangpum();
+		int su2=m2.getSu();
+		int dan2=m2.getDan();
+		String SHOPNAME2=m2.getShopname();
+		
+		System.out.println("**롯데마트 입고물품**");
+		System.out.println("===================");
+		System.out.println("상품명: "+sangpum);
+		System.out.println("수량: "+su+"개");
+		System.out.println("가격: "+dan+"원");
+		System.out.println("===================");
+		System.out.println("상품명: "+sangpum2);
+		System.out.println("수량: "+su2+"개");
+		System.out.println("가격: "+dan2+"원");
+	}
+
+}
