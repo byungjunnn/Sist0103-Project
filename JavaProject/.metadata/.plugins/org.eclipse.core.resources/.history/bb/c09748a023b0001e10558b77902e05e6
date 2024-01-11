@@ -1,0 +1,20 @@
+package day0111;
+
+class Artist{
+	
+	//변수명
+	
+	
+	//명시적 생성자
+	
+	
+	//출력 메서드 한번에 만들기
+}
+public class QuizInstance_06 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,36 @@
+package day0111;
+
+class Artist{
+	
+	//변수명
+	private String ArtGroup;
+	private String ArtSong;
+	
+	static String ArtName;
+	static int cnt;
+	
+	//명시적 생성자
+	public void Artist(String ArtGroup, String ArtSong) {
+		this.ArtGroup=ArtGroup;
+		this.ArtSong=ArtSong;
+	}
+	
+	//출력 메서드 한번에 만들기
+	public void ArtistInfo() {
+		cnt++;
+		System.out.println("**아티스트 정보_"+cnt+"***");
+		System.out.println("소속학급: "+Member.ban);//같은 클래스에서는 클래스명 생략가능
+		System.out.println("이름: "+stuName);
+		System.out.println("성별: "+stuGen);
+		System.out.println("주소: "+stuAddr);
+		System.out.println("------------------------------");
+	}
+}
+public class QuizInstance_06 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
