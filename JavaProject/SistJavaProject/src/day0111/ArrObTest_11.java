@@ -4,7 +4,8 @@ class Shop{
 	private String sangpum;
 	private int price;
 	private String sangColor;
-
+	
+	//명시적 생성자
 	public Shop(String s, int p, String c) {
 		sangpum=s;
 		price=p;

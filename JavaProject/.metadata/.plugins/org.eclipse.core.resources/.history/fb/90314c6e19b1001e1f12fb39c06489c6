@@ -1,0 +1,58 @@
+package day0112;
+
+import day0105.book114_21;
+
+abstract class Board{
+	
+	public abstract void play();
+}
+///////////////////////////
+class Insert extends Board{
+	
+	@Override
+	public void play() {
+		System.out.println("입력합니다");
+	}
+}
+//////////////////////////
+class select extends Board{
+	
+	@Override
+	public void play() {
+		System.out.println("선택합니다");
+	}
+}
+////////////////////////////
+class Update extends Board{
+	
+	@Override
+	public void play() {
+		System.out.println("수정합니다");
+	}
+}
+///////////////////////////
+class Delete extends Board{
+	
+	@Override
+	public void play() {
+		System.out.println("삭제합니다");
+	}
+}
+public class Abstract_12 {
+
+	public static void main(String[] args) {
+		// 다형성으로 생성 메서드 출력
+		Board board;
+		board=new Insert();
+		board.play();
+		board=new select();
+		board.play();
+		board=new Update();
+		board.play();
+		board=new Delete();
+		board.play();
+				
+
+	}
+
+}

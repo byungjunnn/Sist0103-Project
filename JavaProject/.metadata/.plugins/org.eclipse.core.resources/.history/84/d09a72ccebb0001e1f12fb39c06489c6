@@ -1,0 +1,10 @@
+package day0112;
+
+public class SubObj_03 extends SuperObj_03{
+
+	public SubObj_03(String name, int age) {
+		super(name, age); //반드시 첫줄, 부모생성자 호출
+	}
+
+	String addr;
+}

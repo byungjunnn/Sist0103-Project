@@ -42,5 +42,4 @@ public class StaticObTest_05 {
 		mem1.writeMemberData();
 		mem2.writeMemberData();
 	}
-
 }

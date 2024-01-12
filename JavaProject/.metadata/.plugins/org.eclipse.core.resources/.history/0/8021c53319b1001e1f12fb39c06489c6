@@ -1,0 +1,52 @@
+package day0112;
+
+import day0105.book114_21;
+
+abstract class Board{
+	
+	public abstract void play();
+}
+///////////////////////////
+class Insert extends Board{
+	
+	@Override
+	public void play() {
+		// TODO Auto-generated method stub
+		
+	}
+}
+//////////////////////////
+class select extends Board{
+	
+	@Override
+	public void play() {
+		// TODO Auto-generated method stub
+		
+	}
+}
+////////////////////////////
+class Update extends Board{
+	
+	@Override
+	public void play() {
+		// TODO Auto-generated method stub
+		
+	}
+}
+///////////////////////////
+class Delete extends Board{
+	
+	@Override
+	public void play() {
+		// TODO Auto-generated method stub
+		
+	}
+}
+public class Abstract_12 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

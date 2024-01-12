@@ -1,0 +1,19 @@
+package day0112;
+
+interface FoodShop{ //interface는 상수와 추상메서드만 가질 수 있음
+	
+	String SHOPNAME="남소관"; //final이 있는 것이 당연. 생략됨
+	
+}
+////////////////////////
+
+
+
+public class Implement_13 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

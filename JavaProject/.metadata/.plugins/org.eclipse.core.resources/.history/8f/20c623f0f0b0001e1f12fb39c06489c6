@@ -1,0 +1,20 @@
+package day0112;
+
+public class Manager_04 extends Employee_04 {
+
+	String depart;
+	
+	public Manager_04(String name, int sal, int d) {
+		super(name,sal);
+		depart=d;
+		
+	}
+}
+		
+	}
+	
+	@Override
+	public String getEmployee() {
+		return super.getEmployee()+","+depart;
+	}
+}

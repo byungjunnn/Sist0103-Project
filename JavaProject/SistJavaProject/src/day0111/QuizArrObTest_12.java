@@ -4,7 +4,7 @@ class MyInfo{
 	private String name;
 	private String mbti;
 	private int age;
-	
+	//명시적 생성자
 	public MyInfo(String name, String mbti, int age) {
 		this.name=name;
 		this.mbti=mbti;

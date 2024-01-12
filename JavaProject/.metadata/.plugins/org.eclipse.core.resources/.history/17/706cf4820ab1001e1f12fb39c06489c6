@@ -1,0 +1,32 @@
+package day0112;
+//부모클래스
+class Car{
+	
+	private String carCompany;
+	private String carKind;
+	
+	public Car() {
+		this("현대", "전기차")
+		System.out.println("**디폴트 생성자로 생성**");
+	}
+	public Car(String carCompany, String carKind) {
+		this.carCompany=carCompany;
+		this.carKind=carKind;
+	}
+}
+//////////////////////////////
+class MyCar{
+	
+	private String carName;
+	private String carColor;
+	private int carPrice;
+}
+
+public class Inherit_08 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

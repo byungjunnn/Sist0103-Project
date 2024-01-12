@@ -25,9 +25,6 @@ class Manggo{
 	public static void setMes(String mes) {
 		Manggo.mes = mes;
 	}
-	
-	
-	
 }
 
 public class ObTest_09 {

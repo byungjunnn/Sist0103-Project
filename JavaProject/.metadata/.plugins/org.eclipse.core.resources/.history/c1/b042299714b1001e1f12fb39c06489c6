@@ -1,0 +1,13 @@
+package day0112;
+//추상클래스
+
+
+
+public class Abstract_11 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
