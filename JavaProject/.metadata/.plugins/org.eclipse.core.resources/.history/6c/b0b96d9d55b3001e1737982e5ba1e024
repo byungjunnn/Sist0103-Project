@@ -1,0 +1,9 @@
+package day0115;
+
+public class Board_09 {
+	
+	private String writer;
+	private String subject;
+	private String content;
+}
+

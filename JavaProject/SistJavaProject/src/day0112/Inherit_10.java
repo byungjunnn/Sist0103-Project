@@ -19,7 +19,7 @@ class Food1 extends Work{
 /////////////////////////////
 class Clean extends Work{
 	@Override
-	public void process() {
+	public void process() { 
 		System.out.println("***청소담당***");
 	}
 }

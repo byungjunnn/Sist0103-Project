@@ -1,0 +1,57 @@
+package day0115;
+
+abstract class Game{
+	abstract public void play(); // 일반, 추상메서드 가능
+	abstract public void stop();
+}
+////////////////////////////////
+class Kim extends Game{
+
+	@Override
+	public void play() {
+		System.out.println("kim게임시작");
+	}
+
+	@Override
+	public void stop() {
+		System.out.println("kim게임중단");
+	}
+	
+}
+/////////////////////////
+class Lee extends Game{
+
+	@Override
+	public void play() {
+		System.out.println("lee게임시작");
+	}
+
+	@Override
+	public void stop() {
+		System.out.println("lee게임중단");
+	}
+	
+}
+//////////////////////////
+class Choi extends Game{
+
+	@Override
+	public void play() {
+		System.out.println("choi게임시작");
+	}
+
+	@Override
+	public void stop() {
+		System.out.println("choi게임중단");
+	}
+	
+}
+//////////////////////////
+public class AbstractReview_02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
