@@ -1,0 +1,13 @@
+package day0115;
+
+//Stream: 바이트 단위로 처리
+//writer, reader: 문자로 처리
+
+public class IOExcep_16 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
