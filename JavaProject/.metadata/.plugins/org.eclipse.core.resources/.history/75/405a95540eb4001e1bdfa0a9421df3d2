@@ -1,0 +1,26 @@
+package day0116;
+
+class Outer{
+	
+	String name="조혜영";
+	int age=22;
+	
+	
+	//멤버 내부1
+	class Inner1{
+		
+	}
+	//멤버 내부2
+	class Inner2{
+		
+	}
+}
+
+public class InnerObj_05 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
