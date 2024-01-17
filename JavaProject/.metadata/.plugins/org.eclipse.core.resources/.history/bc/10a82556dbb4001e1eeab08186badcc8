@@ -1,0 +1,24 @@
+package day0117;
+
+import java.io.FileWriter;
+import java.util.Scanner;
+
+public class FWriter_04 {
+
+	Scanner sc;
+	FileWriter fw;
+	static final String FILENAME="C:\\sist0103\\file\\member.txt";
+	
+	public FWriter_04() {
+		sc=new Scanner(System.in);
+	}
+
+	public void dataWrite() {
+		fw=new FileWriter(FILENAME, true);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
