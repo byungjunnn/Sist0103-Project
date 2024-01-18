@@ -18,6 +18,23 @@ public class MyShopList_07 {
 	public MyShopList_07() {
 		shopFileRead();
 	}
+	//Myshop입력
+	public void shopAdd() {
+		System.out.println("추가할 상품명");
+		String sang=sc.nextLine();
+		System.out.println("수량은");
+		int su=Integer.parseInt(sc.nextLine());
+		System.out.println("가격은");
+		int price=Integer.parseInt(sc.nextLine());
+
+		//Myshop클래스가 생성
+		MyShop shop=new MyShop(sang, su, price);
+		shop.setTotal(su*price);
+
+		//list에 shop추가
+		list.add(shop);
+		System.out.println("**상품정보가 추가됨**");
+	}
 	//파일쓰기
 	public void shopFileWrite() {
 		FileWriter fw=null;
@@ -41,24 +58,6 @@ public class MyShopList_07 {
 			}
 		}
 	}
-	//Myshop입력
-	public void shopAdd() {
-		System.out.println("추가할 상품명");
-		String sang=sc.nextLine();
-		System.out.println("수량은");
-		int su=Integer.parseInt(sc.nextLine());
-		System.out.println("가격은");
-		int price=Integer.parseInt(sc.nextLine());
-
-		//Myshop클래스가 생성
-		MyShop shop=new MyShop(sang, su, price);
-		shop.setTotal(su*price);
-
-		//list에 shop추가
-		list.add(shop);
-		System.out.println("**상품정보가 추가됨**");
-	}
-
 	//파일읽기
 	public void shopFileRead() {
 		FileReader fr=null;
@@ -88,7 +87,7 @@ public class MyShopList_07 {
 				//				s.setTotal(total);
 
 				//MyShop클래스에 저장 #2
-				MyShop s=new MyShop(sang, su, price);
+				MyShop s=new MyShop(sang, su, price); //명시적 생성자로 생성
 				s.setTotal(total);
 
 				//list에 추가

@@ -1,0 +1,16 @@
+package day0118;
+
+import javax.swing.JFrame;
+
+public class SwingGibon_01 extends JFrame{
+
+	
+	public SwingGibon_01(String title) {
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

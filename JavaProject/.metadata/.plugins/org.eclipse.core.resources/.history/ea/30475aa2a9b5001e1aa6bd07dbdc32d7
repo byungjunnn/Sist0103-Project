@@ -1,0 +1,25 @@
+package day0118;
+
+import java.awt.Color;
+import java.awt.Container;
+
+public class SwingBtnEvent_05 {
+
+	Container cp;
+	
+	public SwingBtnEvent_05(String title) {
+		super(title);
+		
+		cp=this.getContentPane();
+		
+		this.setBounds(800, 100, 300, 300);
+		cp.setBackground(new Color(255,255,200));
+
+		this.setVisible(true);
+	}
+	public static void main(String[] args) {
+
+		new SwingBtnEvent_05("스윙시작");
+	}
+
+}

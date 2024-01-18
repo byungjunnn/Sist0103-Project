@@ -1,0 +1,24 @@
+package day0118;
+
+import java.awt.Color;
+import java.awt.Container;
+
+import javax.swing.JFrame;
+
+public class SwingLay_03 extends JFrame{
+	Container cp;
+
+	public SwingLay_03(String title) {
+		super(title);
+		
+		cp=this.getContentPane();
+
+		this.setBounds(300, 100, 300, 300);
+		cp.setBackground(new Color(255,255,200));
+		this.setVisible(true);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new SwingStart("기본레이아웃");
+	}
+}
