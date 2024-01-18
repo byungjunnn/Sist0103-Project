@@ -35,15 +35,12 @@ public class SwingTextF_10 extends JFrame{
 	public void setDesign() {
 		this.setLayout(null);
 		
+		
 		lblNum1=new JLabel("숫자1");
 		lblNum1.setBounds(20, 20, 50, 30);
-		lblNum1.setBackground(Color.ORANGE);
-		lblNum1.setOpaque(true);
 		this.add(lblNum1);
 		lblNum2=new JLabel("숫자2");
 		lblNum2.setBounds(20, 60, 50, 30);
-		lblNum2.setBackground(Color.ORANGE);
-		lblNum2.setOpaque(true);
 		this.add(lblNum2);
 		
 		tfNum1=new JTextField();

@@ -42,8 +42,8 @@ public class SwingTextF_10 extends JFrame{
 		this.add(lblNum1);
 		lblNum2=new JLabel("숫자2");
 		lblNum2.setBounds(20, 60, 50, 30);
-		lblNum2.setBackground(Color.ORANGE);
-		lblNum2.setOpaque(true);
+		lblNum1.setBackground(Color.ORANGE);
+		lblNum1.setOpaque(true);
 		this.add(lblNum2);
 		
 		tfNum1=new JTextField();
