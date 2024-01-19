@@ -1,0 +1,26 @@
+package day0119;
+
+import java.awt.Color;
+import java.awt.Container;
+
+import javax.swing.JFrame;
+
+public class FileDialog_06 extends JFrame{
+
+	Container cp;
+	
+	public FileDialog_06(Stirng title) {
+		super(title);
+		
+		cp=this.getContentPane();
+		
+		this.setBounds(800, 100, 300, 300);
+		cp.setBackground(new Color(255,200,200));
+		this.setVisible(true);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new FileDialog_06("파일다이얼로그_6");
+	}
+
+}

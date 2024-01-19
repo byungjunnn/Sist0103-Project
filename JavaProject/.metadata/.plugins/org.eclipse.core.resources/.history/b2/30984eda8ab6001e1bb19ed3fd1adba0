@@ -1,0 +1,43 @@
+package day0119;
+
+import java.awt.Color;
+import java.awt.Container;
+import java.awt.GridLayout;
+
+import javax.swing.JFrame;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.JTextArea;
+
+public class JTable_05 extends JFrame{
+	Container cp;
+	JTable tb1, tb2, tb3;
+	JTextArea area;
+	
+	
+	public JTable_05(String title) {
+		super(title);
+		
+		cp=this.getContentPane();
+		
+		this.setBounds(800, 100, 300, 300);
+		cp.setBackground(new Color(255,200,200));
+		initDesign();
+		this.setVisible(true);
+	}
+	public void initDesign() {
+		//2행2열의 Grid 레이아웃
+		this.setLayout(new GridLayout(2, 2, 5, 5));
+		
+		//1번째 tb은 행,열만 지정
+		tb1=new JTable(5, 4);
+		this.add(new JScrollPane(tb1)); //스크롤 테이블 추가
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new JTable_05("스윙테이블5");
+
+	}
+
+}

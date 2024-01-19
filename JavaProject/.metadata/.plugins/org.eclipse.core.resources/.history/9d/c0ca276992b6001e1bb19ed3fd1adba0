@@ -1,0 +1,35 @@
+package day0119;
+
+import java.awt.Color;
+import java.awt.Container;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JTextArea;
+
+public class FileDialog_06 extends JFrame{
+
+	Container cp;
+	JTextArea area;
+	JButton btnOpen, btnSave; //갯수가 적으면 익명내부클래스 사용해도 됨
+	
+	public FileDialog_06(String title) {
+		super(title);
+		
+		cp=this.getContentPane();
+		
+		this.setBounds(800, 100, 400, 500);
+		cp.setBackground(new Color(255,200,200));
+		initDesign();
+		this.setVisible(true);
+	}
+	public void initDesign() {
+		
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new FileDialog_06("파일다이얼로그_6");
+	}
+
+}

@@ -1,0 +1,55 @@
+package day0119;
+
+import java.awt.Color;
+import java.awt.Container;
+import java.awt.Font;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+
+public class FileDialog_06 extends JFrame{
+
+	Container cp;
+	JTextArea area;
+	JButton btnOpen, btnSave; //갯수가 적으면 익명내부클래스 사용해도 됨
+	
+	public FileDialog_06(String title) {
+		super(title);
+		
+		cp=this.getContentPane();
+		
+		this.setBounds(800, 100, 400, 500);
+		cp.setBackground(new Color(255,200,200));
+		initDesign();
+		this.setVisible(true);
+	}
+	public void initDesign() {
+		this.setLayout(null);
+		
+		btnOpen=new JButton("파일 불러오기");
+		btnOpen.setBounds(40, 20, 120, 30);
+		this.add(btnOpen);
+		
+		btnSave=new JButton("파일 저장하기");
+		btnSave.setBounds(220, 20, 120, 30);
+		this.add(btnSave);
+		
+		
+		
+		//출력 영역
+		area=new JTextArea();
+		area.setFont(new Font("맑은 고딕", Font.BOLD, 20));
+		
+		JScrollPane js=new JScrollPane(area);
+		js.setBounds(20, 70, 350, 300);
+		this.add(js);
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new FileDialog_06("파일다이얼로그_6");
+	}
+
+}

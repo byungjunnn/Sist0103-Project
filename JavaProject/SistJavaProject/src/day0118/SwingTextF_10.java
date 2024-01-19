@@ -73,7 +73,7 @@ public class SwingTextF_10 extends JFrame{
 		lblResult.setBounds(20, 170, 250, 60);
 		lblResult.setBorder(new TitledBorder("결과확인"));
 		lblResult.setBorder(new LineBorder(Color.BLUE, 4));
-		lblResult.setFont(new FontUIResource("", Font.BOLD, 25)); //글꼴변경
+		lblResult.setFont(new Font("", Font.BOLD, 25)); //글꼴변경
 		this.add(lblResult);
 		
 		//익명내부클래스 (생성과 동시에 실행 후 마치면 종료)

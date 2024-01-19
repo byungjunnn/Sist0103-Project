@@ -6,8 +6,13 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="total"/>
+		<item key="selection" value="area"/>
 		<list key="findhistory">
+			<item value="area"/>
+			<item value="JPanel"/>
+			<item value="JP"/>
+			<item value="Jp"/>
+			<item value="panel"/>
 			<item value="total"/>
 			<item value="set"/>
 		</list>

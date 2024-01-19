@@ -1,7 +1,0 @@
-package day0112;
-
-public class Employee_04 {
-
-	String empName;
-	int salary;
-}
