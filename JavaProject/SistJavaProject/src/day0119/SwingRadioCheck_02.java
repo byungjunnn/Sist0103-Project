@@ -89,7 +89,6 @@ public class SwingRadioCheck_02 extends JFrame implements ActionListener{
 			}
 		}
 		lblMessage.setText(msg); //msg에 저장된 텍스트들을 lblMessage에 저장
-		
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

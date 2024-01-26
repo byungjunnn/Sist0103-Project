@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="area"/>
+		<item key="selection" value="sel"/>
 		<list key="findhistory">
+			<item value="sel"/>
 			<item value="area"/>
 			<item value="JPanel"/>
 			<item value="JP"/>

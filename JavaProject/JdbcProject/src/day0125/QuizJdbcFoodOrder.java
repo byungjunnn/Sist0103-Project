@@ -34,7 +34,7 @@ public class QuizJdbcFoodOrder {
 				String shoploc=rs.getString("상점위치");
 				String addr=rs.getString("주문자위치");
 				
-				System.out.println(num+"\t"+fno+"\t"+name+"\t"+foodname+"\t"+price+"\t"+shopname+"\t"+shoploc+"\t"+addr);
+				System.out.println(num+"\t"+fno+"\t"+name+"\t"+foodname+"\t"+price+"원\t"+shopname+"\t"+shoploc+"\t"+addr);
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

@@ -12,7 +12,7 @@ public class ConnectTest {
 	
 	public void connectSawon() {
 		Connection conn=null;  //드라이버가 있어야 실행됨
-		Statement stmt=null;  //sql문을 전달해 주는 객체
+		Statement stmt=null;  //데이터베이스로 sql문을 전달해 주는 객체
 		ResultSet rs=null;  //오라클 레코드를 자바로 가져옴, 한 열씩 전체를 읽어옴(조회)
 		
 		
