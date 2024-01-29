@@ -78,7 +78,6 @@ public class QuizStuInfo {
 		}finally {
 			db.dbClose(rs, stmt, conn);
 		}
-		
 	}
 	
 	public void delete() {
