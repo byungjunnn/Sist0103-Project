@@ -194,8 +194,8 @@ public class JdbcScore_02 {
 	public void process() {
 		while(true) {
 			System.out.println("1.학생성적추가   2.학생정보전체출력   3.학생정보삭제   4.학생정보수정   9.종료");
-			
 			int num=Integer.parseInt(sc.nextLine());
+			
 			switch(num) {
 			case 1:
 				this.insertSungjuk();
