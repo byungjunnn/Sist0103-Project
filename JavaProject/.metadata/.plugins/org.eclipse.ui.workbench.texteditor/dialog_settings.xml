@@ -6,8 +6,15 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="executeUp"/>
+		<item key="selection" value="수정"/>
 		<list key="findhistory">
+			<item value="수정"/>
+			<item value="insert"/>
+			<item value="list\"/>
+			<item value="list"/>
+			<item value="model"/>
+			<item value="mycar"/>
+			<item value="mouse"/>
 			<item value="executeup"/>
 			<item value="sel"/>
 			<item value="area"/>
@@ -16,7 +23,6 @@
 			<item value="Jp"/>
 			<item value="panel"/>
 			<item value="total"/>
-			<item value="set"/>
 		</list>
 		<list key="replacehistory">
 		</list>
