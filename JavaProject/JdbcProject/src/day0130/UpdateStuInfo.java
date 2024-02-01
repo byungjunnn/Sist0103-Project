@@ -23,7 +23,7 @@ public class UpdateStuInfo extends JFrame{
 		this.setBounds(200, 100, 200, 250);
 		cp.setBackground(new Color(255, 204, 204));
 		initDesign();
-//		setVisible(true);
+		setVisible(true);
 	}
 	
 	public void initDesign() {
@@ -72,7 +72,7 @@ public class UpdateStuInfo extends JFrame{
 		add(btnMod);
 		
 	}
-//	public static void main(String[] args) {
-//		new UpdateStuInfo("학생정보수정프레임");
-//	}
+	public static void main(String[] args) {
+		new UpdateStuInfo("학생정보수정프레임");
+	}
 }

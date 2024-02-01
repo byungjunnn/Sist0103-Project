@@ -32,7 +32,6 @@ import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumnModel;
 
-import day0131.ShopListForm;
 import oracleDb.DbConnect;
 
 public class Jdbc_Car extends JFrame implements ActionListener{
@@ -45,7 +44,7 @@ public class Jdbc_Car extends JFrame implements ActionListener{
 
 	DbConnect db=new DbConnect();
 	MycarUpdate mycarupdate=new MycarUpdate("내 자동차 정보");
-	
+
 	public Jdbc_Car() {
 		setTitle("자동차 관리 시스템");
 		cp = this.getContentPane();
@@ -74,12 +73,12 @@ public class Jdbc_Car extends JFrame implements ActionListener{
 		add(bt_jo);
 		bt_jo.addActionListener(this);
 
-		ImageIcon icon=new ImageIcon("imgs/ioniq5.png");
+		ImageIcon icon=new ImageIcon("imgs/jungbi.png");
 		Image img=icon.getImage();
-		Image changeImg=img.getScaledInstance(300, 100, Image.SCALE_SMOOTH);
+		Image changeImg=img.getScaledInstance(300, 300, Image.SCALE_SMOOTH);
 		ImageIcon changeIcon=new ImageIcon(changeImg);
 		lbimage=new JLabel(changeIcon, JLabel.CENTER);
-		lbimage.setBounds(30, 200, 250, 100);
+		lbimage.setBounds(35, 190, 280, 130);
 		add(lbimage);
 
 		String[] title = { "No", "회사", "모델명", "번호", "등록일자" };
@@ -136,26 +135,28 @@ public class Jdbc_Car extends JFrame implements ActionListener{
 		} finally {
 			db.dbClose(pstmt, conn);
 		}
-
+		//테이블 클릭시 2번 프레임 출력 후 데이터 추가
 		table.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				super.mouseClicked(e);
-				
+
 				int row=table.getSelectedRow();
 				if (row != -1) {
-					String num=JOptionPane.showInputDialog("차량 번호 뒷자리를 입려해주세요~");
-					
-					String sql="select car_fuel, car_fe, car_op, car_dis, car_en, car_sh, car_size, car_price from car where mycar_num like '%"+num+"%'";
-					
+					String num=JOptionPane.showInputDialog(null, "차량 번호 뒷자리를 입력해주세요", "차량 정보 상세보기", JOptionPane.PLAIN_MESSAGE);
+
+					String sql="select c.car_company, c.car_model,c.car_fuel, c.car_fe, c.car_op, c.car_dis, c.car_en, c.car_sh, c.car_size, c.car_price,m.mycar_num, to_char(m.mycar_rd,'yyyy-mm-dd') mycar_rd, to_char(m.mycar_gumsa,'yyyy-mm-dd') mycar_gumsa, m.mycar_avgac, m.mycar_mile, m.mycar_engine, m.mycar_tire from car c,mycar m where m.mycar_num=c.mycar_num and m.mycar_num like '____" + num + "'";
+
 					Connection conn=db.getOracle();
 					PreparedStatement pstmt=null;
 					ResultSet rs=null;
-					
+
 					try {
 						pstmt=conn.prepareStatement(sql);
 						rs=pstmt.executeQuery();
 						if(rs.next()) {
+							mycarupdate.car_company.setText(rs.getString("car_company"));
+							mycarupdate.car_model.setText(rs.getString("car_model"));
 							mycarupdate.tf1.setText(rs.getString("car_fuel"));
 							mycarupdate.tf2.setText(rs.getString("car_fe"));
 							mycarupdate.tf3.setText(rs.getString("car_op"));
@@ -164,7 +165,15 @@ public class Jdbc_Car extends JFrame implements ActionListener{
 							mycarupdate.tf6.setText(rs.getString("car_sh"));
 							mycarupdate.tf7.setText(rs.getString("car_size"));
 							mycarupdate.tf8.setText(rs.getString("car_price"));
-							
+							mycarupdate.tf11.setText(rs.getString("mycar_num"));
+							mycarupdate.tf12.setText(rs.getString("mycar_rd"));
+							mycarupdate.tf13.setText(rs.getString("mycar_gumsa"));
+							mycarupdate.tf14.setText(rs.getString("mycar_avgac"));
+							mycarupdate.tf15.setText(rs.getString("mycar_mile"));
+							mycarupdate.cbengine.setSelectedItem(rs.getString("mycar_engine"));
+							mycarupdate.cbtire.setSelectedItem(rs.getString("mycar_tire"));
+
+
 							mycarupdate.setVisible(true);
 						}
 					} catch (SQLException e1) {
@@ -183,7 +192,7 @@ public class Jdbc_Car extends JFrame implements ActionListener{
 		model.setRowCount(0);
 		String num = tfNum.getText();
 
-		String sql = "select cno, car_company,car_model,c.mycar_num,to_char(mycar_rd,'yy-mm-dd') mycar_rd from car c, mycar m where c.mycar_num=m.mycar_num and c.mycar_num Like '%"
+		String sql = "select cno, car_company, car_model,c.mycar_num,to_char(mycar_rd,'yy-mm-dd') mycar_rd from car c, mycar m where c.mycar_num=m.mycar_num and c.mycar_num Like '%"
 				+ num + "%' order by cno";
 
 		Connection conn = db.getOracle();
