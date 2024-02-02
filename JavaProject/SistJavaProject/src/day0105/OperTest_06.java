@@ -9,7 +9,7 @@ public class OperTest_06 {
 		
 		a=b=c=d=e=6;
 		
-		a+=2; //a에 2를 더한 값이 다시 a가 됨, a=a+2
+		a+=2; //a에 2를 더한 값이 다시 a가 됨, a=a+2  // a+=2
 		b-=3;
 		c*=2;
 		d/=2;

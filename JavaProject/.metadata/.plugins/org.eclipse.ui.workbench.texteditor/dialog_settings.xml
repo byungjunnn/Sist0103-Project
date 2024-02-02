@@ -6,23 +6,23 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="cb"/>
+		<item key="selection" value="jung"/>
 		<list key="findhistory">
+			<item value="jung"/>
+			<item value="insert"/>
+			<item value="null"/>
+			<item value="조회"/>
+			<item value="수정"/>
+			<item value="ioni"/>
+			<item value="ion"/>
+			<item value="cben"/>
 			<item value="cb"/>
+			<item value="conn"/>
 			<item value="delete"/>
 			<item value="dele"/>
 			<item value="draw"/>
 			<item value="list"/>
 			<item value="image"/>
-			<item value="can"/>
-			<item value="mycaru"/>
-			<item value="mycar"/>
-			<item value="del"/>
-			<item value="Write"/>
-			<item value="deleteData"/>
-			<item value="수정"/>
-			<item value="update"/>
-			<item value="insert"/>
 		</list>
 		<list key="replacehistory">
 		</list>

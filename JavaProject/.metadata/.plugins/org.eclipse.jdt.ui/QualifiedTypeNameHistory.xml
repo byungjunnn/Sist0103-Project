@@ -25,7 +25,6 @@
     <fullyQualifiedTypeName name="java.awt.GridLayout"/>
     <fullyQualifiedTypeName name="day0131.ShopAddForm.PhotoDraw"/>
     <fullyQualifiedTypeName name="javax.swing.border.LineBorder"/>
-    <fullyQualifiedTypeName name="java.awt.Color"/>
     <fullyQualifiedTypeName name="javax.swing.JButton"/>
     <fullyQualifiedTypeName name="java.awt.Image"/>
     <fullyQualifiedTypeName name="javax.swing.ImageIcon"/>
@@ -49,7 +48,6 @@
     <fullyQualifiedTypeName name="JavaProject1.CarDto"/>
     <fullyQualifiedTypeName name="JavaProject1.MycarUpdate_mycarSelect"/>
     <fullyQualifiedTypeName name="JavaProject1.MycarUpdate"/>
-    <fullyQualifiedTypeName name="JavaProject1.Jdbc_Car"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
@@ -58,6 +56,8 @@
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
-    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
     <fullyQualifiedTypeName name="javax.swing.JLabel"/>
+    <fullyQualifiedTypeName name="JavaProject1.Jdbc_Car"/>
+    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="java.awt.Color"/>
 </qualifiedTypeNameHistroy>

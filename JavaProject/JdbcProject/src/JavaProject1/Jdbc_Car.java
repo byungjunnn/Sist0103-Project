@@ -38,7 +38,7 @@ public class Jdbc_Car extends JFrame implements ActionListener{
 	Container cp;
 	JLabel lbTitle, lbcompany, lbmodel, lbrd, lbprice, lbfuel, lbfe, lbop, lbimage;
 	JTextField tfNum;
-	JButton bt_jo, bt_sangse;
+	JButton bt_jo, bt_re;
 	DefaultTableModel model;
 	JTable table;
 
@@ -50,6 +50,7 @@ public class Jdbc_Car extends JFrame implements ActionListener{
 		cp = this.getContentPane();
 
 		this.setSize(960, 400);
+		cp.setBackground(Color.WHITE);
 		this.setLocationRelativeTo(null);
 		this.initDesign();
 		this.setVisible(true);
@@ -72,13 +73,26 @@ public class Jdbc_Car extends JFrame implements ActionListener{
 		bt_jo.setBounds(240, 120, 80, 30);
 		add(bt_jo);
 		bt_jo.addActionListener(this);
+		
+		bt_re = new JButton("새로고침");
+		bt_re.setBounds(130, 120, 90, 30);
+		add(bt_re);
+		bt_re.addActionListener(this);
 
-		ImageIcon icon=new ImageIcon("imgs/jungbi.png");
+//		ImageIcon icon=new ImageIcon("imgs/jungbi.png");
+//		Image img=icon.getImage();
+//		Image changeImg=img.getScaledInstance(300, 300, Image.SCALE_SMOOTH);
+//		ImageIcon changeIcon=new ImageIcon(changeImg);
+//		lbimage=new JLabel(changeIcon, JLabel.CENTER);
+//		lbimage.setBounds(35, 190, 280, 130);
+//		add(lbimage);
+		
+		ImageIcon icon=new ImageIcon("imgs/cars.png");
 		Image img=icon.getImage();
-		Image changeImg=img.getScaledInstance(300, 300, Image.SCALE_SMOOTH);
+		Image changeImg=img.getScaledInstance(270, 200, Image.SCALE_SMOOTH);
 		ImageIcon changeIcon=new ImageIcon(changeImg);
 		lbimage=new JLabel(changeIcon, JLabel.CENTER);
-		lbimage.setBounds(35, 190, 280, 130);
+		lbimage.setBounds(0, 210, 300, 150);
 		add(lbimage);
 
 		String[] title = { "No", "회사", "모델명", "번호", "등록일자" };
@@ -145,7 +159,8 @@ public class Jdbc_Car extends JFrame implements ActionListener{
 				if (row != -1) {
 					String num=JOptionPane.showInputDialog(null, "차량 번호 뒷자리를 입력해주세요", "차량 정보 상세보기", JOptionPane.PLAIN_MESSAGE);
 
-					String sql="select c.car_company, c.car_model,c.car_fuel, c.car_fe, c.car_op, c.car_dis, c.car_en, c.car_sh, c.car_size, c.car_price,m.mycar_num, to_char(m.mycar_rd,'yyyy-mm-dd') mycar_rd, to_char(m.mycar_gumsa,'yyyy-mm-dd') mycar_gumsa, m.mycar_avgac, m.mycar_mile, m.mycar_engine, m.mycar_tire from car c,mycar m where m.mycar_num=c.mycar_num and m.mycar_num like '____" + num + "'";
+					String sql="select c.car_company, c.car_model,c.car_fuel, c.car_fe, c.car_op, c.car_dis, c.car_en, c.car_sh, c.car_size, c.car_price,m.mycar_num, to_char(m.mycar_rd,'yyyy-mm-dd') mycar_rd, to_char(m.mycar_gumsa,'yyyy-mm-dd')"
+							+ "mycar_gumsa, m.mycar_avgac, m.mycar_mile, m.mycar_engine, m.mycar_tire from car c,mycar m where m.mycar_num=c.mycar_num and m.mycar_num like '____" + num + "'";
 
 					Connection conn=db.getOracle();
 					PreparedStatement pstmt=null;
@@ -228,6 +243,10 @@ public class Jdbc_Car extends JFrame implements ActionListener{
 
 		if(ob==bt_jo) {
 			selectMycar();
+			
+		}else if(ob==bt_re) {
+			selectCar();
+			tfNum.setText("");
 		}
 	}
 
